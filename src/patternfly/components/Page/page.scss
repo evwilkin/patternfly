@@ -324,6 +324,12 @@ $pf-page-v6--height-breakpoint-map: build-breakpoint-map("base", "sm", "md", "lg
   background: var(--#{$page}__main-container--BackgroundColor);
   border: var(--#{$page}__main-container--BorderWidth) solid var(--#{$page}__main-container--BorderColor);
   border-radius: var(--#{$page}__main-container--BorderRadius);
+
+  &.pf-m-fill {
+    .#{$page}__main {
+      flex-grow: 1;
+    }
+  }
 }
 
 .#{$page}__main-container,
